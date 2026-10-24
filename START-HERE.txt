@@ -1,14 +1,17 @@
 UNEARTHED WEBSITE UPDATE - October 24, 2026
 
-1. Extract this ZIP on your computer.
+1. Extract this ZIP.
 2. Open your unearthed-catalog GitHub repository.
 3. Choose Add file > Upload files.
-4. Upload the CONTENTS of this folder, including the resource-art and staff folders, at the repository's top level. Do not upload the ZIP itself or an extra enclosing folder.
-5. Commit changes. Wait for GitHub Pages to finish publishing, then refresh your website.
+4. Upload the CONTENTS, including resource-art and staff, at the repository top level. Do not upload this ZIP or an extra enclosing folder.
+5. Commit changes. Wait for GitHub Pages to publish, then refresh your website.
 
-The public website files contain the seasonal landscapes, distinct elemental pillars, responsive sticky menu, resource illustrations, Economy & XP, separate Bounties & Quests, and the read-only themed character display.
+CHARACTER MASTER LIST
+Your shared Google Sheets registry already exists:
+https://docs.google.com/spreadsheets/d/1cphSQdDRBjMO3w_mv3F4n2SW2faqJ0wqgHvJeIpodjw/edit
 
-CHARACTER REGISTRATION IS NOT CONNECTED YET.
-The new Google Character Registry has been created, but it is still private. The secure Google Apps Script registration backend has not yet been completed or deployed. The Add New Character Sheet button explains this rather than pretending to save. Do not enter private Google credentials in these files. No backend is included in this public upload.
+The separate Unearthed-Google-Character-Connection.zip contains the Google Apps Script submission code and START-HERE.md instructions. Install it in Google Apps Script, authorize and deploy it, then paste its /exec URL into characterRegistrationUrl in site-config.js and upload that file. The submission connection is not live until that setup is done.
 
-The Google Sheets master list remains needed even though the separate Character Registry website page has been removed. Each themed character page links to its original Google Sheet.
+Everyday workflow after setup: copy and complete the master character sheet; share the player copy as Anyone with the link - Viewer; use Character Sheets > Add New Character Sheet on the website; preview and submit with your approved Google account. It adds the character to the shared Google Sheets master list. The website reads that list automatically. Each character has a themed player link and a link to the original Google Sheet.
+
+No moderator account settings or passwords belong in the public GitHub files. Keep the Apps Script project and its moderator settings in Google. Do not change the registry column headings. Google can cache public spreadsheet downloads for a few minutes.
