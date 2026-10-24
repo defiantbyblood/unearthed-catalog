@@ -30,5 +30,3 @@ Player sheet update: the Storyteller button and original Google Sheet link have 
 
 
 Storyteller is opened only from the Character Sheets list page, beside Add New Character Sheet. The button is not on the individual player sheets.
-
-Earnings Audit totals now display as six separate boxes in one horizontal row. On narrow screens, the totals row scrolls horizontally.
