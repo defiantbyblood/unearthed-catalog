@@ -1,17 +1,14 @@
-UNEARTHED — WEBSITE UPDATE
+UNEARTHED WEBSITE UPDATE - October 24, 2026
 
-1. Download Unearthed-Website-Update.zip and choose Extract All.
-2. Open your GitHub repository:
-   https://github.com/defiantbyblood/unearthed-catalog
+1. Extract this ZIP on your computer.
+2. Open your unearthed-catalog GitHub repository.
 3. Choose Add file > Upload files.
-4. Drag EVERYTHING INSIDE the extracted folder into GitHub.
-   Include the resource-art folder and staff folder.
-   Do not upload the ZIP or an extra enclosing folder.
-5. Click Commit changes. Wait for publishing, then press Ctrl+F5 on the website.
+4. Upload the CONTENTS of this folder, including the resource-art and staff folders, at the repository's top level. Do not upload the ZIP itself or an extra enclosing folder.
+5. Commit changes. Wait for GitHub Pages to finish publishing, then refresh your website.
 
-The public website package contains no backend, credentials or character records.
-Do not upload Unearthed-Moderator-Backend.zip to GitHub Pages.
+The public website files contain the seasonal landscapes, distinct elemental pillars, responsive sticky menu, resource illustrations, Economy & XP, separate Bounties & Quests, and the read-only themed character display.
 
-Shared character saving needs the moderator backend connected separately.
-The public pages show this clearly until it is configured.
-Read SETUP.md for the details.
+CHARACTER REGISTRATION IS NOT CONNECTED YET.
+The new Google Character Registry has been created, but it is still private. The secure Google Apps Script registration backend has not yet been completed or deployed. The Add New Character Sheet button explains this rather than pretending to save. Do not enter private Google credentials in these files. No backend is included in this public upload.
+
+The Google Sheets master list remains needed even though the separate Character Registry website page has been removed. Each themed character page links to its original Google Sheet.
