@@ -86,3 +86,4 @@
   html:not(.section-page) .landscape{width:auto;min-width:100%;height:100%;aspect-ratio:1672/760;left:50%;right:auto;transform:translateX(-50%)}
   .sheet-banner img{filter:saturate(.85) brightness(.83);image-rendering:auto;object-fit:cover}
 }
+.scene-back-nav{padding:12px 16px;border-bottom:1px solid var(--line)}.scene-back-nav a{display:inline-flex;align-items:center;min-height:44px;padding:6px 12px;border:1px solid var(--line);color:#dcc49b;text-decoration:none;background:#20291c}

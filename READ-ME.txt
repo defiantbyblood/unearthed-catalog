@@ -1,14 +1,18 @@
-UNEARTHED — SPREADSHEET UPDATE
+UNEARTHED — POSTER ANNOUNCEMENTS
 
-1. Extract this ZIP.
-2. In your existing GitHub repository choose Add file > Upload files.
-3. Upload the 18 website files in this folder to the repository's main folder, replacing the same-named files. Include both new PNG images and ledger-art.js.
-4. Commit the upload, wait for GitHub Pages to publish, and refresh the website with Ctrl+Shift+R.
+Upload the 20 website files in this folder to your existing GitHub repository's main folder, replacing matching files. Keep site-config.js, existing resource-art folder, data files and hero artwork. Commit, wait for Pages publishing, then refresh with Ctrl+Shift+R. No Apps Script changes are needed.
 
-Keep your existing site-config.js, catalog.js, economy-data.js, resource-art.js, resource-art folder, hero artwork, and other files. No Google Apps Script or spreadsheet changes are required. This is an update package for the existing website.
+HOW TO MAKE A POSTER
+1. Go to Bounties & Quests and choose a submenu.
+2. Click Add to Announcement beside each posting you want.
+3. Open Announcement Creator from the top menu.
+4. Edit the title, introduction, posting details or closing message if desired. Posters update automatically.
+5. Click Copy image and paste into the Discord announcement channel. Or choose Download PNG and attach the saved PNG to Discord.
 
-Resources, Economy & XP, and Bounties & Quests now use compact read-only spreadsheet tables. Search, resource filters, Google Sheets read-only sync, and click-to-enlarge images remain. Economy and Bounties submenus are a single compact row beneath the banner, with sideways scrolling on small screens. Table columns also scroll within their own area on small screens.
+Each posting has its own illustrated, gold-framed poster. Long postings continue onto additional numbered images. Images export at 900 pixels wide, using the matching subject artwork and original posting details. If image copying is unsupported or blocked by the browser, Download PNG remains available. Copy text instead is available as an alternative.
 
-Thumbnail matching uses names and activities, not random rotation. Current entries have a relevant mapped illustration; future unknown names show illustration pending. Related tiers can share the same subject illustration.
+Drafts remain only in this browser and survive refresh unless browser storage is cleared. Nothing is automatically sent to Discord. Staff still reviews and posts the image manually.
 
-Includes the preceding mobile, page-title and Storyteller changes. XP stats remain read-only; no event awarding controls.
+Includes the previous Storytellers menu move and Back to website button, spreadsheet tables, relevant thumbnails, compact submenu rows and mobile changes. Keep your existing Google connection configuration.
+
+The Selected postings section has been removed. Use the Discord-ready posters section to copy, download, or remove individual posters.
