@@ -76,3 +76,15 @@ body{min-width:0}
 .pillar.north svg{color:#c0dbe7;stroke-width:1.35;filter:drop-shadow(0 0 4px #b7def3aa)}
 .pillar.east svg{color:#9bb98c;stroke-width:1.6;filter:drop-shadow(0 0 4px #a1bd8688)}
 .pillar.south svg{color:#dfa673;stroke-width:1.3;filter:drop-shadow(0 0 4px #df9a6488)}
+/* Keep the full Home landscape; use a wayfinder ribbon on destination pages. */
+.section-page .world-hero{height:clamp(175px,18vw,250px);min-height:0;max-height:none;aspect-ratio:auto;overflow:hidden}
+.section-page .landscape{width:100%;height:auto;aspect-ratio:1672/760;left:0;right:auto;top:50%;bottom:auto;transform:translateY(-48%)}
+.section-page .world-title{top:38%;bottom:auto;left:3%;width:32%;text-align:left}
+.section-page .world-title h1{font-size:clamp(26px,3.3vw,43px)}
+.section-page .world-title .eyebrow{font-size:11px;letter-spacing:.13em}.section-page .world-title .rule,.section-page .world-title .subtitle{display:none}
+.section-page .season-plaque{width:180px;right:3%;top:50%;transform:translateY(-50%);padding:12px;min-height:0}
+.section-page .season-plaque .season-emblem,.section-page .season-plaque .eyebrow,.section-page .season-plaque .rule{display:none}
+.section-page .season-plaque h2{font-size:24px}.section-page .season-plaque #season-months{font-size:10px;margin:5px 0}.section-page .season-plaque #season-status{font-size:10px;max-width:none;line-height:1.5}
+.section-page .world-footer{margin-top:0;padding:8px 3%;gap:10px;justify-content:flex-end}.section-page .world-footer>p,.section-page .world-footer .footer-compass{display:none}
+.section-page .world-footer .season-selector{max-width:none;flex-direction:row;align-items:center;gap:12px}.section-page .world-footer .season-selector select{align-self:center}
+@media(max-width:640px){.section-page .world-hero{height:145px}.section-page .landscape{width:150%;left:-25%}.section-page .world-title{left:4%;top:39%;width:43%}.section-page .world-title h1{font-size:clamp(21px,5vw,29px)}.section-page .world-title .eyebrow{font-size:8px}.section-page .season-plaque{display:none}.section-page .world-footer{padding:7px 12px}.section-page .world-footer .season-selector{width:100%;justify-content:space-between;flex-wrap:wrap}.section-page .season-selector>span:first-child{font-size:8px;flex:1;text-align:left}.section-page .season-selector select{min-height:36px}}

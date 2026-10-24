@@ -1,38 +1,20 @@
-UNEARTHED - CHARACTER SHEET AND STORYTELLER UPDATE
+UNEARTHED - MOBILE, COMPACT STORYTELLER, EVENT XP AND THIN HEADERS
 
-INSTALL
-Extract this ZIP. In your existing unearthed-catalog GitHub repository, choose Add file > Upload files. Upload the TEN website files inside this folder at the repository top level, replacing matching files and adding the new files. Commit changes. Wait for GitHub Pages to finish publishing, then fully refresh your website.
+Upload the THIRTEEN website files in this folder to the TOP LEVEL of your existing GitHub repository, replacing matching files. Commit changes and wait for GitHub Pages to publish. This is one cumulative update containing all recent character-sheet changes.
 
-KEEP YOUR EXISTING site-config.js. It has your working Google submission address. This update does not include or replace that configuration. You do not need to change, redeploy, or reauthorize Apps Script for these visual changes.
+KEEP YOUR EXISTING site-config.js. Do not replace your working Google connection. Add eventRewardsEnabled: true inside its configuration ONLY AFTER installing the separate Google event update.
 
-INCLUDED CHANGES
-- Horizontal character list: Character name | Player name | Adjusted XP | Adjusted coin | View character sheet.
-- A separate, reference-inspired player sheet with seasonal artwork, gold frames, character panels and eight section tabs. It has no back button or website menu. The player sheet contains neither a Storyteller button nor an original Google Sheet link.
-- Overview, Attributes, Skills, Spells, Mutations, Flaws, Inventory and Audit. All five regular character tabs are read; the [Linked] tabs are neither downloaded nor displayed. The template's Arsenal tab is [Linked], so it is excluded.
-- Search the active section on the player sheet.
-- A separate matching scene workspace is available at storyteller.html.
-- Add up to twelve characters per scene from the shared registry or by pasting player/Google Sheet links. View their overview, attributes, skills, spells, mutations, flaws, inventory and audit together. Search the current section across all characters in the scene.
-- Save named scenes in this browser. Saved scenes contain character links and selections, not copies of the character data. Scenes are NOT synced to the shared Google registry or other devices. The character registry itself remains shared across moderators. Clear browser storage and these local scene selections are lost. Character Google Sheets are unchanged.
+Included:
+- The full landscape on Home and thinner seasonal wayfinder banners on Resources, Economy & XP, Bounties & Quests and the Character Sheets list.
+- A phone menu, larger touch controls, swipeable character tabs, mobile forms and horizontal table scrollers with character names pinned at the left.
+- The approved standalone player sheet, no back button, no Storyteller button or original Google Sheet link on that player page, and only the five regular character-owned source tabs. All [Linked] tabs stay excluded.
+- The horizontal five-column character list. Storyteller is opened only from this list page.
+- Six XP/coin boxes in one horizontal row on the player audit tab, plus Primary / Secondary / Tertiary mutation buttons.
+- Compact Storyteller spreadsheet tables containing names and mechanical stats ONLY. Descriptions and long detail cards have been removed from this workspace. Full descriptions remain on the individual player sheets.
+- Scene/event name, XP FOR EACH CHARACTER and Complete event controls. The Google backend update is REQUIRED before XP awards can run; the website alone cannot edit Google Sheets. It fails closed until enabled.
 
-PLAYER LINKS
-Old #character links automatically open the standalone player sheet after this update. The registry view links open character.html directly in a new tab. You can give that address to the player on Discord. The Storyteller workspace is read-only; it does not grant edit access or update Google Sheets.
+The separate Unearthed-Google-Event-XP-Update.zip goes into your EXISTING Google Apps Script project, not GitHub. Read its EVENT-XP-SETUP.md for the four file changes, active deployment update, named-moderator edit permissions, and configuration flag.
 
-DATA DETAILS
-The list's XP and coin summaries reflect the last registry submission. The full player sheet reads current values from the character's own Google Sheet and refreshes every two minutes while visible. Use Refresh characters in the Storyteller workspace to update scene data. Google can cache public spreadsheet downloads for a few minutes.
+Existing player links and the Google character registration flow stay compatible. Scene selections are still saved only in the current browser; the approved Character Registry remains shared. No real event rewards were written during testing.
 
-The portrait is a neutral placeholder because the master template has no dedicated portrait field. Location, age, backstory, and other fields seen only in the reference artwork have not been fabricated. The page displays the information actually present in the template.
-
-Verified with your registered character, an additional master-template preview, scene filtering, standalone player links, phone layout and the existing registration tests. No test records were added to the real registry. Resource and Economy & XP data code is unchanged.
-
-Latest design pass: gold-framed spreadsheet boxes, bordered label/value cells, horizontal record columns on wide screens, and compact skill rows across character and Storyteller views. On phones, columns stack into readable rows.
-
-Player sheet update: the Storyteller button and original Google Sheet link have been removed from the player page. The separate Storyteller workspace is available at storyteller.html.
-
-
-Storyteller is opened only from the Character Sheets list page, beside Add New Character Sheet. The button is not on the individual player sheets.
-
-Earnings Audit totals now display as six separate boxes in one horizontal row. On narrow screens, the totals row scrolls horizontally.
-
-Latest Storyteller layout: horizontal comparison tables replace the tall character cards across all sections. The overview has one character per row with key stats in columns. Abilities and items use one record per row, alongside character and player names. The character-name column and table headers stay visible during scrolling. Longer descriptions, supporting fields, and audit history expand on demand. The section search filters reference rows.
-
-Mutations now has a Primary / Secondary / Tertiary submenu on the standalone player sheet. Each button shows that branch's skill count and entries; search applies to the selected branch. Identically named skills in different branches remain separate.
+Responsive layouts were checked at 320, 375, 390, 430, 768, 1024 and 1440 pixels. These are browser layout checks, not tests on physical iOS/Android devices. Google permission/authorization prompts must be completed in your browser. All setup and backend files are provided separately.
