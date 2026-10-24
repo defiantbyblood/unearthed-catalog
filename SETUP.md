@@ -1,56 +1,64 @@
-# Unearthed — seasonal world archive
+# Unearthed website update
 
-The home layout follows the supplied Option 2 image: compass landscape, left title, right seasonal plaque, four illustrated cards, dark navigation and footer. The landscape keeps natural warmth with soft detail. The cards use the owner's requested muted seasonal palettes. The original hero.png is retained as a reference. hero-reference.png and season-cards.png are new image assets based on the supplied design.
+## Upload the public site
 
-## 1. Publish the public website
+Extract **Unearthed-Website-Update.zip**. In your existing GitHub repository, use **Add file > Upload files** and upload everything INSIDE the extracted folder, including **resource-art** and **staff**. Replace the matching files, commit, wait for GitHub Pages, then refresh the website with Ctrl+F5. No Pages settings change is required.
 
-Use **Unearthed-Option-2-Public.zip**. Extract it, then upload the files and staff folder INSIDE it to the root of the existing GitHub Pages repository. Do not upload the ZIP itself or add an extra enclosing folder. Replace the earlier public files. Keep the Pages publishing setting on main / root as before.
+Do not upload the backend ZIP, private data, credentials, keys, or .env files to GitHub Pages. The public package is built from an explicit file list and contains no character records.
 
-Public files: index.html, style.css, reference.css, catalog.js, app.js, season.js, dashboard.js, site-config.js, icons.svg, hero-reference.png, season-cards.png, hero.png, staff/index.html, staff/staff.js, SETUP.md. The public staff folder is only a setup landing page; it contains no character data.
+## What changed
 
-The backend and secret files do not belong in the Pages upload. Public JavaScript, HTML, images, bundled catalog data, and all Git history are visible to visitors. Never add private sheet exports, private character records, service account JSON, .env files or private keys to this repository.
+- A single fixed top menu. The four home navigation boxes have been removed.
+- The seasonal wayfinder remains above every destination. Each page opens below it with a title and description.
+- Automatic America/New_York calendar: West/Autumn Sep–Nov, North/Winter Dec–Feb, East/Spring Mar–May, South/Summer Jun–Aug. Only that pillar is lit.
+- Winter snow, spring blossoms, summer greenery and the approved autumn landscape preserve the same wayfinder composition. Footer previews reset to Automatic on reload.
+- All 347 existing resource entries have small expandable reference illustrations, mapped to 271 distinct resource names. Repeat resources share the same illustration. New names added to the live spreadsheet show an honest illustration-pending placeholder until art is added; they do not disappear from the catalog.
+- Economy & XP has Experience Points and Coin boxes with searchable illustrated entries underneath.
+- Bounties, Assassinations & Quests is a separate page. Its boxes show Bounties, Assassinations, Quests & Tasks, and Completed Events. The two contract categories come from the same Contracts Board source tab. Duplicate posting IDs are retained, and status text is shown as entered in the source. The Completed Events tab currently contains an entry marked Approval needed; the site preserves that value rather than assuming completion.
+- Character Sheets and Character Registry open as normal pages without lock icons. The spreadsheet-like roster has Character name, Player name, XP adjusted, Coin adjusted, Updated date, and Updater name. The registry has an Add character sheet popup.
 
-The existing public catalog is preserved: search, region/type/tier filters, sort, pagination, manual refresh, two-minute visible-page refresh, and saved snapshot fallback. It reads the existing seven regional tabs, A5:E, with the existing spreadsheet ID and tab IDs. Its original app.js and catalog.js are unchanged. The live connection returned 347 entries during verification on October 24, 2026. The snapshot is public even if you later revoke Google access; remove it and its repository history if it contains anything that should not be published.
+## Google Sheets connections
 
-**Private character records must be in separate Restricted spreadsheets.** Hidden tabs in the public catalog spreadsheet are not a security boundary. Do not put private tabs in a spreadsheet that is publicly readable or published to the web.
+The existing public resource catalog, filters, sorting, pagination, manual refresh, two-minute visible-page refresh and saved snapshot fallback remain intact. It reads the same seven regional resource tabs. catalog.js is the original saved catalog.
 
-## 2. Seasons
+The economy and adventure board read these verified tabs from the public economy workbook:
 
-| Months | Season | Lit pillar |
-|---|---|---|
-| September–November | Autumn | West |
-| December–February | Winter | North |
-| March–May | Spring | East |
-| June–August | Summer | South |
+- Experience Points — gid 1925254100
+- Coin — gid 101
+- Contracts Board — gid 102
+- Quests & Tasks — gid 25650652
+- Completed Events — gid 561602065
 
-The calendar uses America/New_York consistently across visitors. It checks on load, every minute, and when the tab becomes visible. The footer selector allows explicitly labelled previews. Previews reset to Automatic on reload. Exactly one pillar light is enabled at a time; the base artwork has all pillars unlit. Navigation accents, status plaque and lighting follow the selected season. The four destination cards retain their individual muted seasonal palettes. Autumn foliage in the landscape is an artistic backdrop and does not claim to change to winter foliage.
+Source: https://docs.google.com/spreadsheets/d/176hswPG8lZ7G9JNCT0Atp40UmUotYudZpbEelZlxHNk/edit
 
-## 3. Economy & XP
+The site performs read-only public CSV reads, which preserve mixed values such as numeric XP and Varies. It refreshes on opening either page, every two minutes while that page is visible, and on manual refresh. If a read fails, it retains the last successful data or the verified October 24, 2026 snapshot. Adding rows to the existing tabs is supported; renaming or restructuring headers may require a site update. The website does not write to this workbook.
 
-The card and navigation open an accessible dialog. The supplied files did not contain approved currency, XP or bounty rules, so the dialog explains that the guide is awaiting content. Add approved public rules there when supplied. No XP values or balances are invented.
+The economy workbook's sharing metadata currently allows anyone with its link to edit. If only moderators should edit it, change Google's general access to Viewer while keeping named moderator editors. This update does not change Google's permissions.
 
-## 4. Private staff backend — requires your configuration
+Never place private character data in hidden tabs of these public spreadsheets. Public snapshots and website files are visible to everyone and remain in Git history.
 
-Use **Unearthed-Staff-Backend.zip**, extracted onto a private Node.js 24+ server. Its backend and staff directories must remain siblings. No dependencies or package installation are required. This scaffold has been tested locally; real sign-in and Google reads have NOT been verified because no credentials, Access application or private sheet configuration were supplied.
+## Shared character roster: separate connection required
 
-1. Choose an HTTPS staff hostname under your domain, such as staff.your-domain.com. Create a Cloudflare Access self-hosted application protecting the entire hostname and all paths, including /api/* and /staff.js. Allow only specific moderator/admin identities through your identity provider. Do not add an Everyone or Bypass policy. Copy the application's AUD tag and your team issuer URL.
-2. Connect the hostname to the private Node server using Cloudflare Tunnel. With the default HOST=127.0.0.1, route the tunnel to http://127.0.0.1:8787. Keep the Node port off the public network. Configure your host's service manager to restart the Node process and tunnel after a reboot. Do not expose a public directory or run the public preview server as the private backend.
-3. On that private server, copy backend/.env.example to backend/.env. Fill ACCESS_ISSUER (https://YOUR-TEAM.cloudflareaccess.com, no trailing slash), ACCESS_AUDIENCE, and STAFF_EMAILS (comma-separated exact allowed email addresses). The backend independently verifies the Access JWT signature, issuer, audience, expiration and the email allowlist on EVERY request. Merely supplying a forged Access header does not authorize a request. Empty or incorrect configuration fails closed.
-4. In your Google Cloud project, enable the Google Sheets API. Create a dedicated service account. Store its JSON key OUTSIDE the checkout and web root, readable only by the server user; set GOOGLE_SERVICE_ACCOUNT_FILE to that absolute file path. Never paste keys into site-config.js or upload them to GitHub. Share ONLY the intended separate private spreadsheets with that service account as Viewer. Keep their general access Restricted. This backend requests spreadsheets.readonly and has no write route.
-5. Fill CHARACTER_SHEETS_ID and CHARACTER_REGISTRY_ID in the PRIVATE .env. Fill the corresponding RANGE values with fixed, bounded, approved web-view ranges. Preserve double quotes around values such as "'Approved Web View'!A1:H1000". Only include columns staff should see. The first row is used as table headings. Sheet schemas were not supplied: these are configurable read-only tables, not a completed custom character editor. The browser cannot choose arbitrary spreadsheet IDs or ranges.
-6. From the backend directory, run `npm test`, then `npm start`. Serve it only through the protected HTTPS hostname. Authorized staff can view /#sheets and /#registry; missing credentials receive 403, and unavailable Google configuration returns 503 without exposing upstream error details. No response containing staff information is cacheable. No credentials or private records are logged by the code.
-7. In the PUBLIC site-config.js, set staffPortalUrl to your protected HTTPS ORIGIN, for example `https://staff.your-domain.com`. This address is public, not a secret. Republish this one configuration file. All four staff navigation/card links will point to the protected portal. Until configured, they lead to the honest setup landing page.
-8. Change the staff/index.html archive backlink to the full public site URL on your server if you want it to return across domains. Leave its staff.js script on the same protected origin. Sign out clears the visible records and navigates to Cloudflare Access logout. Staff records are never stored in localStorage or bundled snapshots.
+**GitHub Pages cannot save a shared roster.** Until the moderator backend is configured, the public character pages explain that it is not connected. The Add popup can be previewed, but its save button is disabled. No browser-only roster is presented as a shared list, and no production records are invented.
 
-Before using real records, test with a small non-sensitive private test spreadsheet and check: signed-out requests are denied; an authenticated non-staff user is denied; allowed staff can read only each fixed configured range; POST is rejected; a missing Google key shows an unavailable message; removing a user from STAFF_EMAILS and restarting denies their next request. Access policy changes and session revocation should also be managed through Cloudflare. Keep server/tunnel software updated and rotate a key if exposed.
+The backend serves the SAME full website, including its fixed menu and seasonal wayfinder, behind moderator sign-in. Moderators use that protected hostname to read/add/update the shared roster. This is also the deployment option for making the entire site moderator-only; a public GitHub Pages URL itself is not access-controlled by hiding links.
 
-Official references: [Cloudflare application tokens](https://developers.cloudflare.com/cloudflare-one/access-controls/applications/http-apps/authorization-cookie/application-token/) and [Google Sheets scopes](https://developers.google.com/workspace/sheets/api/scopes). Google permissions apply to the whole spreadsheet, so dedicated private spreadsheets and a least-privilege Viewer account matter.
+1. Extract **Unearthed-Moderator-Backend.zip** onto a private Node.js 24+ server. Keep backend, staff, resource-art, and the public files together in the extracted structure. Do not upload this archive to GitHub Pages.
+2. Set up a Cloudflare Access self-hosted application for a hostname you control, such as staff.your-domain.com. Protect the entire hostname and all paths. Allow only the intended moderator identities; do not use an Everyone or Bypass policy. Copy your team issuer URL and the application's AUD tag.
+3. Route that hostname through Cloudflare Tunnel to http://127.0.0.1:8787. Keep the Node port private. Set your host's service manager to run the Node server and tunnel after reboot.
+4. On the server only, copy backend/.env.example to backend/.env. Fill ACCESS_ISSUER, ACCESS_AUDIENCE, and STAFF_EMAILS. Set PUBLIC_ORIGIN to the exact HTTPS hostname, without a trailing slash. Set REGISTRY_DATA_FILE to an absolute file path on durable private storage outside the web root and Git checkout. Use one Node instance per roster file and back up that file; ephemeral hosting storage is unsuitable.
+5. From the backend directory run `npm test`, then `npm start`. No package installation is needed. All roster requests validate the signed Access token, issuer, audience, expiration and email allowlist. Writes also require the configured same origin and JSON content type. Missing authentication fails closed.
+6. Open the protected hostname. Add a Google Sheets link, character/player names, and XP/coin totals. Duplicate sheet links are rejected. The server records the signed-in updater and UTC date automatically. Adjust changes the roster's recorded totals, not the original Google spreadsheet. The linked sheet remains governed by Google's own sharing permissions. This link registry needs no Google service-account credentials.
+7. In the PUBLIC site-config.js, set staffPortalUrl to the protected HTTPS origin. Republish that configuration file. The unconnected public character page then offers an Open connected moderator workspace link. Moderators can bookmark the protected full site directly.
 
-## 5. Verification and preview
+The legacy /api/sheets and /api/registry raw-sheet readers remain optional and protected. Their GOOGLE_SERVICE_ACCOUNT_FILE and CHARACTER_* environment values are not needed for the new shared link registry. If using those optional readers, keep the key outside the checkout and use a Viewer-only service account against separate Restricted character spreadsheets.
 
-The five automated tests cover all twelve months, valid staff authentication, missing/expired/wrong-audience/wrong-issuer/future/non-staff credentials, forged signatures, an empty allowlist, and HTTP requests that cannot read a private sheet before authorization. Tests use generated test keys and fake records, not your credentials.
+No production Access application, credentials, domain, persistent server, or live character roster was supplied or deployed in this task. Shared saving was verified with an isolated local test roster and automated security tests. Real deployment remains a setup step.
 
-From the complete source folder: `node --test backend/auth.test.mjs season.test.cjs`.
+The moderator host restricts remote script execution. The resource catalog's original Google JSONP refresh is therefore blocked there and uses its saved catalog fallback; it still syncs normally on the public GitHub Pages site. Economy/board CSV refresh is allowed on both hosts.
 
-The design has been visually checked in the in-app browser. The public catalog's live sync was verified. Private live integration and hosting remain setup steps. This delivery does not publish to your GitHub account or claim that private sign-in already works.
+## Art and verification
 
+Generated reference art is representative, including fictional materials and creatures; it is not photographic identification or gameplay authority. The final assets use WebP to keep the public download small. Original PNG artwork remains in the working source folder but is not required in this upload.
+
+Verified: all twelve month mappings; all 347 resource image mappings; resource search, pagination, thumbnails and expansion; separate economy/board navigation; read-only economy CSV sync including Varies and coin conversions; fixed navigation while scrolling; shared character creation and adjustment persisting after reload in an isolated test; and eight automated authentication, origin, input-validation, persistence, duplicate and concurrency checks. No test records are included in the packages.

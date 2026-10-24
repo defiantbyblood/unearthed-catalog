@@ -1,0 +1,17 @@
+UNEARTHED — WEBSITE UPDATE
+
+1. Download Unearthed-Website-Update.zip and choose Extract All.
+2. Open your GitHub repository:
+   https://github.com/defiantbyblood/unearthed-catalog
+3. Choose Add file > Upload files.
+4. Drag EVERYTHING INSIDE the extracted folder into GitHub.
+   Include the resource-art folder and staff folder.
+   Do not upload the ZIP or an extra enclosing folder.
+5. Click Commit changes. Wait for publishing, then press Ctrl+F5 on the website.
+
+The public website package contains no backend, credentials or character records.
+Do not upload Unearthed-Moderator-Backend.zip to GitHub Pages.
+
+Shared character saving needs the moderator backend connected separately.
+The public pages show this clearly until it is configured.
+Read SETUP.md for the details.
