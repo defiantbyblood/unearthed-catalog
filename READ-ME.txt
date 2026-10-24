@@ -1,18 +1,9 @@
-UNEARTHED — POSTER ANNOUNCEMENTS
+ARSENAL WEBSITE FILES
 
-Upload the 20 website files in this folder to your existing GitHub repository's main folder, replacing matching files. Keep site-config.js, existing resource-art folder, data files and hero artwork. Commit, wait for Pages publishing, then refresh with Ctrl+Shift+R. No Apps Script changes are needed.
+Extract this ZIP. Upload the eight website files to the main folder of your existing GitHub repository, replacing files with matching names. Include both PNG images. Commit the upload, wait for GitHub Pages to publish, then refresh the website.
 
-HOW TO MAKE A POSTER
-1. Go to Bounties & Quests and choose a submenu.
-2. Click Add to Announcement beside each posting you want.
-3. Open Announcement Creator from the top menu.
-4. Edit the title, introduction, posting details or closing message if desired. Posters update automatically.
-5. Click Copy image and paste into the Discord announcement channel. Or choose Download PNG and attach the saved PNG to Discord.
+arsenal.html is the new standalone page. Arsenal is added to the main menu through index.html. reference.css supplies shared table and page styling. economy.js is included because this index.html also references the latest Economy type-filter update.
 
-Each posting has its own illustrated, gold-framed poster. Long postings continue onto additional numbered images. Images export at 900 pixels wide, using the matching subject artwork and original posting details. If image copying is unsupported or blocked by the browser, Download PNG remains available. Copy text instead is available as an alternative.
+Keep all your other existing website files, especially site-config.js, mobile.css, mobile.js, season.js, icons.svg, style.css, characters.css, hero artwork, catalog data and resource-art folder. This is an update package, not a complete replacement website.
 
-Drafts remain only in this browser and survive refresh unless browser storage is cleared. Nothing is automatically sent to Discord. Staff still reviews and posts the image manually.
-
-Includes the previous Storytellers menu move and Back to website button, spreadsheet tables, relevant thumbnails, compact submenu rows and mobile changes. Keep your existing Google connection configuration.
-
-The Selected postings section has been removed. Use the Discord-ready posters section to copy, download, or remove individual posters.
+No Apps Script changes are needed for Arsenal. It reads the public Arsenal reference sheet and includes a saved fallback. Weapons and Armor are separated, with equipment type and attribute dropdowns, search and expandable pictures.
