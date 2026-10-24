@@ -1,3 +1,34 @@
-Upload characters.js and character-model.js to the top level of your GitHub repository, replacing the old versions.
-This fixes the misleading Invalid URL message. Registration still needs a deployed Google Apps Script /exec URL in site-config.js.
-Do not replace your configured site-config.js with an empty example.
+UNEARTHED - CHARACTER SHEET AND STORYTELLER UPDATE
+
+INSTALL
+Extract this ZIP. In your existing unearthed-catalog GitHub repository, choose Add file > Upload files. Upload the TEN website files inside this folder at the repository top level, replacing matching files and adding the new files. Commit changes. Wait for GitHub Pages to finish publishing, then fully refresh your website.
+
+KEEP YOUR EXISTING site-config.js. It has your working Google submission address. This update does not include or replace that configuration. You do not need to change, redeploy, or reauthorize Apps Script for these visual changes.
+
+INCLUDED CHANGES
+- Horizontal character list: Character name | Player name | Adjusted XP | Adjusted coin | View character sheet.
+- A separate, reference-inspired player sheet with seasonal artwork, gold frames, character panels and eight section tabs. It has no back button or website menu. The player sheet contains neither a Storyteller button nor an original Google Sheet link.
+- Overview, Attributes, Skills, Spells, Mutations, Flaws, Inventory and Audit. All five regular character tabs are read; the [Linked] tabs are neither downloaded nor displayed. The template's Arsenal tab is [Linked], so it is excluded.
+- Search the active section on the player sheet.
+- A separate matching scene workspace is available at storyteller.html.
+- Add up to twelve characters per scene from the shared registry or by pasting player/Google Sheet links. View their overview, attributes, skills, spells, mutations, flaws, inventory and audit together. Search the current section across all characters in the scene.
+- Save named scenes in this browser. Saved scenes contain character links and selections, not copies of the character data. Scenes are NOT synced to the shared Google registry or other devices. The character registry itself remains shared across moderators. Clear browser storage and these local scene selections are lost. Character Google Sheets are unchanged.
+
+PLAYER LINKS
+Old #character links automatically open the standalone player sheet after this update. The registry view links open character.html directly in a new tab. You can give that address to the player on Discord. The Storyteller workspace is read-only; it does not grant edit access or update Google Sheets.
+
+DATA DETAILS
+The list's XP and coin summaries reflect the last registry submission. The full player sheet reads current values from the character's own Google Sheet and refreshes every two minutes while visible. Use Refresh characters in the Storyteller workspace to update scene data. Google can cache public spreadsheet downloads for a few minutes.
+
+The portrait is a neutral placeholder because the master template has no dedicated portrait field. Location, age, backstory, and other fields seen only in the reference artwork have not been fabricated. The page displays the information actually present in the template.
+
+Verified with your registered character, an additional master-template preview, scene filtering, standalone player links, phone layout and the existing registration tests. No test records were added to the real registry. Resource and Economy & XP data code is unchanged.
+
+Latest design pass: gold-framed spreadsheet boxes, bordered label/value cells, horizontal record columns on wide screens, and compact skill rows across character and Storyteller views. On phones, columns stack into readable rows.
+
+Player sheet update: the Storyteller button and original Google Sheet link have been removed from the player page. The separate Storyteller workspace is available at storyteller.html.
+
+
+Storyteller is opened only from the Character Sheets list page, beside Add New Character Sheet. The button is not on the individual player sheets.
+
+Earnings Audit totals now display as six separate boxes in one horizontal row. On narrow screens, the totals row scrolls horizontally.
