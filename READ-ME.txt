@@ -1,11 +1,3 @@
-UNEARTHED WEBSITE UPDATE
+Upload index.html, dashboard.js, and reference.css to the main folder of your GitHub repository, replacing those same three files. Commit the upload and wait for GitHub Pages to publish. Then press Ctrl+Shift+R on the website.
 
-Upload the 13 website files in this folder to the root of your existing GitHub repository, replacing files with the same names. Keep your existing site-config.js and all artwork files. You do not need to delete the repository first.
-
-Includes phone layouts, clearer mobile landscape display without CSS blur or stretched proportions, compact spreadsheet-style Storyteller reference tables, and short framed banners on destination pages. Home keeps its large banner.
-
-Storyteller no longer includes event XP awarding or completion controls. Read-only XP statistics remain. No Apps Script update or Google Sheet change is needed for this update.
-
-After GitHub Pages finishes publishing, refresh the website. The mobile stylesheet has a new version address to refresh its cached copy.
-
-Destination page titles now appear once in the image banner, replacing Unearthed there. Descriptions remain below. Home is unchanged.
+Inner-page image banners show only the page title. The repeated title below is removed. The top navigation logo and Home stay unchanged. Keep site-config.js and all other existing files.
