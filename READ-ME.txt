@@ -7,3 +7,5 @@ Includes phone layouts, clearer mobile landscape display without CSS blur or str
 Storyteller no longer includes event XP awarding or completion controls. Read-only XP statistics remain. No Apps Script update or Google Sheet change is needed for this update.
 
 After GitHub Pages finishes publishing, refresh the website. The mobile stylesheet has a new version address to refresh its cached copy.
+
+Destination page titles now appear once in the image banner, replacing Unearthed there. Descriptions remain below. Home is unchanged.
