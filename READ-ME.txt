@@ -1,0 +1,3 @@
+Upload characters.js and character-model.js to the top level of your GitHub repository, replacing the old versions.
+This fixes the misleading Invalid URL message. Registration still needs a deployed Google Apps Script /exec URL in site-config.js.
+Do not replace your configured site-config.js with an empty example.
