@@ -30,3 +30,9 @@ Player sheet update: the Storyteller button and original Google Sheet link have 
 
 
 Storyteller is opened only from the Character Sheets list page, beside Add New Character Sheet. The button is not on the individual player sheets.
+
+Earnings Audit totals now display as six separate boxes in one horizontal row. On narrow screens, the totals row scrolls horizontally.
+
+Latest Storyteller layout: horizontal comparison tables replace the tall character cards across all sections. The overview has one character per row with key stats in columns. Abilities and items use one record per row, alongside character and player names. The character-name column and table headers stay visible during scrolling. Longer descriptions, supporting fields, and audit history expand on demand. The section search filters reference rows.
+
+Mutations now has a Primary / Secondary / Tertiary submenu on the standalone player sheet. Each button shows that branch's skill count and entries; search applies to the selected branch. Identically named skills in different branches remain separate.
