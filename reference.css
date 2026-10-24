@@ -88,3 +88,14 @@ body{min-width:0}
 .section-page .world-footer{margin-top:0;padding:8px 3%;gap:10px;justify-content:flex-end}.section-page .world-footer>p,.section-page .world-footer .footer-compass{display:none}
 .section-page .world-footer .season-selector{max-width:none;flex-direction:row;align-items:center;gap:12px}.section-page .world-footer .season-selector select{align-self:center}
 @media(max-width:640px){.section-page .world-hero{height:145px}.section-page .landscape{width:150%;left:-25%}.section-page .world-title{left:4%;top:39%;width:43%}.section-page .world-title h1{font-size:clamp(21px,5vw,29px)}.section-page .world-title .eyebrow{font-size:8px}.section-page .season-plaque{display:none}.section-page .world-footer{padding:7px 12px}.section-page .world-footer .season-selector{width:100%;justify-content:space-between;flex-wrap:wrap}.section-page .season-selector>span:first-child{font-size:8px;flex:1;text-align:left}.section-page .season-selector select{min-height:36px}}
+/* Destination headers match the approved short Storyteller banner. */
+.page-banner-label{display:none}
+.section-page .world-hero{height:110px;min-height:0;width:calc(100% - 32px);margin:10px 16px 0;border:1px solid #a4824a;outline:1px solid #6c5735;outline-offset:5px;box-shadow:0 0 0 8px #14160f;aspect-ratio:auto}
+.section-page .landscape{width:100%;left:0;right:auto;top:20%;height:auto;aspect-ratio:1672/760;transform:translateY(-20%)}
+.section-page .landscape-vignette{background:linear-gradient(90deg,#080b0ae8,transparent 70%),linear-gradient(0deg,#0d100dda,transparent 45%)}
+.section-page .world-title{top:14px;bottom:auto;left:30px;width:auto;max-width:calc(100% - 45px);text-align:center}
+.section-page .world-title h1{font:30px/1.05 Georgia,serif;font-variant:small-caps;letter-spacing:.025em;color:#d6b789;text-transform:none}
+.section-page .world-title .eyebrow,.section-page .world-title .rule,.section-page .world-title .subtitle,.section-page .season-plaque{display:none}
+.section-page .world-title .page-banner-label{display:block;font:17px/1.3 Georgia,serif;text-transform:uppercase;letter-spacing:.065em;color:#dfccaa;margin:5px 0 0;padding:0 0 8px;border-bottom:1px solid #b18a5855}
+.section-page .world-footer{margin-top:10px}
+@media(max-width:640px){.section-page .world-hero{height:110px;width:calc(100% - 24px);margin:9px 12px 0;outline-offset:3px;box-shadow:0 0 0 5px #14160f}.section-page .landscape{width:100%;left:0;top:20%;transform:translateY(-20%)}.section-page .world-title{top:19px;left:18px;max-width:calc(100% - 35px);width:auto}.section-page .world-title h1{font-size:28px}.section-page .world-title .page-banner-label{font-size:13px;letter-spacing:.04em}.section-page .world-footer{margin-top:8px}}

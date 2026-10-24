@@ -1,20 +1,9 @@
-UNEARTHED - MOBILE, COMPACT STORYTELLER, EVENT XP AND THIN HEADERS
+UNEARTHED WEBSITE UPDATE
 
-Upload the THIRTEEN website files in this folder to the TOP LEVEL of your existing GitHub repository, replacing matching files. Commit changes and wait for GitHub Pages to publish. This is one cumulative update containing all recent character-sheet changes.
+Upload the 13 website files in this folder to the root of your existing GitHub repository, replacing files with the same names. Keep your existing site-config.js and all artwork files. You do not need to delete the repository first.
 
-KEEP YOUR EXISTING site-config.js. Do not replace your working Google connection. Add eventRewardsEnabled: true inside its configuration ONLY AFTER installing the separate Google event update.
+Includes phone layouts, clearer mobile landscape display without CSS blur or stretched proportions, compact spreadsheet-style Storyteller reference tables, and short framed banners on destination pages. Home keeps its large banner.
 
-Included:
-- The full landscape on Home and thinner seasonal wayfinder banners on Resources, Economy & XP, Bounties & Quests and the Character Sheets list.
-- A phone menu, larger touch controls, swipeable character tabs, mobile forms and horizontal table scrollers with character names pinned at the left.
-- The approved standalone player sheet, no back button, no Storyteller button or original Google Sheet link on that player page, and only the five regular character-owned source tabs. All [Linked] tabs stay excluded.
-- The horizontal five-column character list. Storyteller is opened only from this list page.
-- Six XP/coin boxes in one horizontal row on the player audit tab, plus Primary / Secondary / Tertiary mutation buttons.
-- Compact Storyteller spreadsheet tables containing names and mechanical stats ONLY. Descriptions and long detail cards have been removed from this workspace. Full descriptions remain on the individual player sheets.
-- Scene/event name, XP FOR EACH CHARACTER and Complete event controls. The Google backend update is REQUIRED before XP awards can run; the website alone cannot edit Google Sheets. It fails closed until enabled.
+Storyteller no longer includes event XP awarding or completion controls. Read-only XP statistics remain. No Apps Script update or Google Sheet change is needed for this update.
 
-The separate Unearthed-Google-Event-XP-Update.zip goes into your EXISTING Google Apps Script project, not GitHub. Read its EVENT-XP-SETUP.md for the four file changes, active deployment update, named-moderator edit permissions, and configuration flag.
-
-Existing player links and the Google character registration flow stay compatible. Scene selections are still saved only in the current browser; the approved Character Registry remains shared. No real event rewards were written during testing.
-
-Responsive layouts were checked at 320, 375, 390, 430, 768, 1024 and 1440 pixels. These are browser layout checks, not tests on physical iOS/Android devices. Google permission/authorization prompts must be completed in your browser. All setup and backend files are provided separately.
+After GitHub Pages finishes publishing, refresh the website. The mobile stylesheet has a new version address to refresh its cached copy.

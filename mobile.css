@@ -80,3 +80,9 @@
 }
 @media(prefers-reduced-motion:reduce){.sheet-tabs{scroll-behavior:auto}}
 @media(max-width:640px){.season-selector select,.section-page .world-footer .season-selector select{min-height:44px}.topbar{padding-top:max(8px,env(safe-area-inset-top))}body:has(.sheet-frame){padding-top:max(8px,env(safe-area-inset-top))}}
+/* Preserve artwork detail on phones: no blur or stretched image proportions. */
+@media(max-width:640px){
+  .landscape-base{filter:saturate(.86) contrast(.95) brightness(.98);transform:none;object-fit:cover}
+  html:not(.section-page) .landscape{width:auto;min-width:100%;height:100%;aspect-ratio:1672/760;left:50%;right:auto;transform:translateX(-50%)}
+  .sheet-banner img{filter:saturate(.85) brightness(.83);image-rendering:auto;object-fit:cover}
+}
