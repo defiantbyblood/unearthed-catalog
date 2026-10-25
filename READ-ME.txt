@@ -1,5 +1,1 @@
-Upload all four website files to the root of defiantbyblood/unearthed-catalog on GitHub. Replace existing files and add character-layout.css as a new file. Commit the changes, wait for GitHub Pages to finish, then refresh your character sheet.
-
-Includes the approved left-aligned character name header, smaller Unearthed Character Sheet subtitle, player name/Discord/Joined line, unhighlighted detail labels, no portrait or character information card, and full-width Character Stats (including Status) followed by Racial Information.
-
-No Apps Script or site-config.js changes needed. Each page reads the Google Sheet in its character link. The correct sheet for this demo is 1YpHUvKfvT94Z-nn61FEFXH4M03EtQfujwsGFoUKnBDk. Existing links to other copies continue reading those copies.
+Upload all seven website files to the root of your GitHub repository, replacing existing files. Keep your current site-config.js. Character list links now use character.html#character-name. Names are resolved through the public Character Registry. Duplicate names use the player name as well; ambiguous duplicates retain the original full link. Existing full links still work. No Apps Script update is required; its registration confirmation may still provide the longer link. After renaming a character in the registry, use its updated name link.
