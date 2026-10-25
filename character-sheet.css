@@ -28,3 +28,5 @@
 .character-sheet-page .banner-title .sheet-banner-subtitle{font-size:18px;line-height:1.4;letter-spacing:.09em;text-transform:uppercase;font-variant:normal;color:var(--ink);border-bottom:1px solid #b18a5855;padding-bottom:12px;margin:0 0 14px}
 @media(max-width:620px){.character-sheet-page .sheet-banner{min-height:190px}.character-sheet-page .banner-title{max-width:calc(100% - 30px);margin:23px 15px}.character-sheet-page .banner-title h1{font-size:32px}.character-sheet-page .banner-title .sheet-banner-subtitle{font-size:12px;padding-bottom:8px;margin-bottom:10px}}
 .character-sheet-page .banner-title{text-align:left}
+
+.sheet-footer .storyline-link{color:#d6b788;font:13px/1.6 Georgia,serif;text-underline-offset:4px}

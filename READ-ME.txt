@@ -1,1 +1,12 @@
-Upload character.html and character-layout.css to the root of your unearthed-catalog GitHub repository, replacing both files. All six attributes appear in one row on desktop, with horizontal scrolling on smaller screens. This update keeps the approved header and full-width overview layout. No Google Apps Script changes needed.
+Upload all 16 website files (including the four PNG images) to the root of defiantbyblood/unearthed-catalog on GitHub. Replace matching files and add new files. Do not upload this READ-ME. Keep your existing site-config.js.
+
+Includes:
+- Four stationary painted elemental headers, automatically selected by season: West air/lightning, North frost, East leaves/vines, South fire. Replaces the old glowing symbol overlays.
+- Updated by column in the Character Sheets list, read from the registry's Updater Name.
+- Storyline website footer links on the main site, Arsenal, player sheets and Storyteller.
+- Live adjusted XP/coin refresh in the character list (page load, Refresh list, every two minutes while open), with saved-value fallback notices if a sheet is unavailable.
+- Current short character-name links, approved sheet layout, and six attributes in one row.
+
+No new Apps Script changes are required for this website package. The earlier Updated By Apps Script installation is still required to enter new staff credits.
+
+Wait for GitHub Pages deployment, then refresh the website. No spreadsheet contents are modified by this update.
