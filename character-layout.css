@@ -1,0 +1,20 @@
+
+.character-sheet-page .sheet-banner{min-height:290px}
+.character-sheet-page .banner-title{width:calc(100% - 70px);text-align:left}
+.character-sheet-page .banner-title .sheet-banner-subtitle{width:fit-content}
+.character-sheet-page .banner-title .header-player{font:14px/1.5 Georgia,serif;letter-spacing:0;font-variant:normal;color:var(--ink);margin:12px 0 8px}
+.character-sheet-page .header-character-details .fields{display:flex;flex-wrap:wrap;gap:0;width:fit-content;max-width:100%}
+.character-sheet-page .header-character-details .field-cell{display:block;min-width:110px;padding:7px 17px;border:1px solid #785c36;background:#10160fd9}
+.character-sheet-page .header-character-details dt,.character-sheet-page .header-character-details dd{border:0;padding:0;white-space:normal}
+.character-sheet-page .header-character-details dt{font:11px/1.6 Arial,sans-serif;color:#c4b18b}
+.character-sheet-page .header-character-details dd{font:16px/1.5 Georgia,serif}
+.character-sheet-page .overview-grid{grid-template-columns:minmax(230px,1fr) minmax(0,2fr);gap:14px}
+.character-sheet-page .player-info-panel{grid-column:1;grid-row:1/3;align-self:start}
+.character-sheet-page .stats-panel{grid-column:2;grid-row:1}
+.character-sheet-page .overview-grid>.racial-info-panel{grid-column:2;grid-row:2}
+@media(max-width:700px){.character-sheet-page .overview-grid{grid-template-columns:1fr}.character-sheet-page .overview-grid>.panel{grid-column:1;grid-row:auto}.character-sheet-page .banner-title{width:calc(100% - 30px)}.character-sheet-page .header-character-details .field-cell{flex:1 0 30%;min-width:90px;padding:6px 10px}}
+.character-sheet-page .header-character-details dt{background:transparent;box-shadow:none}
+.character-sheet-page .overview-grid{grid-template-columns:minmax(0,1fr)}
+.character-sheet-page .overview-grid>.stats-panel,.character-sheet-page .overview-grid>.racial-info-panel{grid-column:1/-1;grid-row:auto}
+.character-sheet-page .stats-panel .stat-grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+@media(max-width:620px){.character-sheet-page .stats-panel .stat-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}

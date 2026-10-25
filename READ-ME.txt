@@ -1,9 +1,5 @@
-ARSENAL WEBSITE FILES
+Upload all four website files to the root of defiantbyblood/unearthed-catalog on GitHub. Replace existing files and add character-layout.css as a new file. Commit the changes, wait for GitHub Pages to finish, then refresh your character sheet.
 
-Extract this ZIP. Upload the eight website files to the main folder of your existing GitHub repository, replacing files with matching names. Include both PNG images. Commit the upload, wait for GitHub Pages to publish, then refresh the website.
+Includes the approved left-aligned character name header, smaller Unearthed Character Sheet subtitle, player name/Discord/Joined line, unhighlighted detail labels, no portrait or character information card, and full-width Character Stats (including Status) followed by Racial Information.
 
-arsenal.html is the new standalone page. Arsenal is added to the main menu through index.html. reference.css supplies shared table and page styling. economy.js is included because this index.html also references the latest Economy type-filter update.
-
-Keep all your other existing website files, especially site-config.js, mobile.css, mobile.js, season.js, icons.svg, style.css, characters.css, hero artwork, catalog data and resource-art folder. This is an update package, not a complete replacement website.
-
-No Apps Script changes are needed for Arsenal. It reads the public Arsenal reference sheet and includes a saved fallback. Weapons and Armor are separated, with equipment type and attribute dropdowns, search and expandable pictures.
+No Apps Script or site-config.js changes needed. Each page reads the Google Sheet in its character link. The correct sheet for this demo is 1YpHUvKfvT94Z-nn61FEFXH4M03EtQfujwsGFoUKnBDk. Existing links to other copies continue reading those copies.

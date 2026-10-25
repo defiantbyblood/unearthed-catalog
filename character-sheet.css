@@ -20,3 +20,11 @@
 @media(max-width:640px){.storyteller-workspace .sheet-banner{height:130px}.storyteller-workspace .banner-title p{font-size:29px}.storyteller-workspace .banner-title h1{font-size:17px}.storyteller-workspace .scene-reference-table{min-width:760px}.storyteller-workspace .scene-reference-table th,.storyteller-workspace .scene-reference-table td{padding:8px;font-size:13px}.storyteller-workspace .scene-reference-table .scene-name-cell{min-width:112px}.event-reward-bar{margin:0 10px 12px;padding:12px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:end}.event-reward-bar h2,.event-reward-bar p{grid-column:1/-1}.event-reward-bar label{max-width:none;grid-column:1/-1}.event-reward-bar button{min-height:46px;padding:10px 7px;font-size:13px}}
 .storyteller-workspace .sheet-banner{height:110px}.storyteller-workspace .banner-title{top:14px}.storyteller-workspace .banner-title p{font-size:30px}.storyteller-workspace .banner-title h1{font-size:17px;margin-bottom:0;padding-bottom:5px}.storyteller-workspace .banner-title span{display:none}
 #sheet-search-status:empty{display:none}
+/* Player banner: the character name leads, followed by the sheet label. */
+.character-sheet-page .sheet-banner{height:auto;min-height:250px}
+.character-sheet-page .sheet-banner>img{position:absolute;inset:0}
+.character-sheet-page .banner-title{position:relative;inset:auto;width:fit-content;max-width:calc(100% - 70px);margin:26px 35px 30px}
+.character-sheet-page .banner-title h1{font-variant:small-caps;text-transform:none;letter-spacing:.03em;font-size:clamp(32px,4.5vw,56px);line-height:1.1;color:#d6b789;font-weight:400;border:0;padding:0;margin:0 0 9px;overflow-wrap:anywhere}
+.character-sheet-page .banner-title .sheet-banner-subtitle{font-size:18px;line-height:1.4;letter-spacing:.09em;text-transform:uppercase;font-variant:normal;color:var(--ink);border-bottom:1px solid #b18a5855;padding-bottom:12px;margin:0 0 14px}
+@media(max-width:620px){.character-sheet-page .sheet-banner{min-height:190px}.character-sheet-page .banner-title{max-width:calc(100% - 30px);margin:23px 15px}.character-sheet-page .banner-title h1{font-size:32px}.character-sheet-page .banner-title .sheet-banner-subtitle{font-size:12px;padding-bottom:8px;margin-bottom:10px}}
+.character-sheet-page .banner-title{text-align:left}
